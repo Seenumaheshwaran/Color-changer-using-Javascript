@@ -1,0 +1,28 @@
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 500px;
+    height: 200px;
+    align-items: center;
+    justify-content:center;
+    background-color: red;
+    gap: 30px;
+    margin: 40px auto;
+    
+}
+
+.container span {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.container button{
+    background-color: black;
+    color:white;
+}

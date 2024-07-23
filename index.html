@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JAVASCRIPT/script.js"></script>
+</head>
+<body>
+	<section>
+        <div class="container">
+            <span>Background color:RED</span> <button onclick="change()">click me</button>
+        </div>
+    </section>
+</body>
+<script>
+    function change() {
+        var container = document.querySelector('.container');
+        var span = document.querySelector('.container span');
+        var button=document.querySelector('.container button');
+        var color = container.style.backgroundColor;
+
+        if (color === 'brown') {
+            container.style.backgroundColor = 'blue';
+            span.innerHTML = 'Background color: Blue';
+            button.style.backgroundColor='blue';
+        } else if (color === 'blue') {
+            container.style.backgroundColor = 'green';
+            span.innerHTML = 'Background color: Green';
+            button.style.backgroundColor='green';
+        } else if (color === 'green') {
+            container.style.backgroundColor = 'yellow';
+            span.innerHTML = 'Background color: Yellow';
+            button.style.backgroundColor='yellow';
+            button.style.color='black';
+        } else if(color==='yellow'){
+            container.style.backgroundColor = 'black';
+            span.innerHTML = 'Background color: Black';
+            button.style.backgroundColor='black';
+			button.style.color='white'
+        }
+        else{
+        container.style.backgroundColor = 'brown';
+        span.innerHTML = 'Background color: Brown';
+        button.style.backgroundColor='brown';
+        }
+    }
+</script>
+
+</html>
